@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Erin Vaage | SEO Specialist and Aspiring Developer</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Raleway:600|Amiri|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <script src="https://use.fontawesome.com/2bb0a6dd01.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+  </head>
+  <body ng-app="personalApp">
+    <div class="page-wrapper" ng-controller="mainController">
+  <!-- Header -->
+      <div id="top-nav-banner">
+        <img class="name-logo" src="img/signature.png">
+        <div class="top-nav-row">
+          <ul class="navigation-list">
+            <li ui-sref-active="selected" ui-sref="about">About Me</li>
+            <li ui-sref-active="selected" ui-sref="resume">Resume</li>
+            <li><a href="https://www.behance.net/vaagee1e11e" target="_blank">Portfolio</a></li>
+            <li ui-sref-active="selected" ui-sref="contact">Contact</li>
+          </ul>
+        </div>
+      </div>
+
+
+<!-- Page Views -->
+      <ui-view></ui-view>
+
+      <div class="push"></div>
+    </div>
+
+<!-- Footer -->
+      <footer class="main-footer">
+        <div class="footer-info">
+          <p><i class="fa fa-copyright" aria-hidden="true"></i>
+            2017 Erin Vaage</p>
+        </div>
+
+      </footer>
+
+
+    <script src="js/app.js"></script>
+    <script src="js/mainController.js"></script>
+    <script src="js/service.js"></script>
+
+  </body>
+</html>
